@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-12 17:56:18.914637",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "updated_by",
+  "months",
+  "commission_record"
+ ],
+ "fields": [
+  {
+   "fieldname": "updated_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Updated By"
+  },
+  {
+   "default": "3",
+   "fieldname": "months",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "For Months",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commission_record",
+   "fieldtype": "Table",
+   "label": "Commission Records",
+   "options": "Commission Master"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-12 18:42:05.595851",
+ "modified_by": "Administrator",
+ "module": "SRANCO Custom App",
+ "name": "WEF Commission",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -95,13 +95,20 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	# "*": {/
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+
+	"Quotation": {
+		"on_submit": "snc_custom.custom_hooks.quotation.on_submit"
+	},
+	"Item": {
+		"after_insert": "snc_custom.custom_hooks.item.create_todo"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
